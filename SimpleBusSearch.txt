@@ -1,0 +1,19 @@
+public class SimpleBusSearch {
+    public static void main(String[] args) {
+        String[][] routes = {
+            {"Route 1", "Station A", "Station B", "Station C"},
+            {"Route 2", "Station D", "Station E", "Station F"},
+            {"Route 3", "Station G", "Station H", "Station I"}
+        };
+
+        String stop = "Station E"; // stop to search
+        System.out.println("Searching buses for stop: " + stop);
+        for (String[] route : routes) {
+            for (int i = 1; i < route.length; i++) {
+                if (route[i].equals(stop)) {
+                    System.out.println("Bus found: " + route[0]);
+                }
+            }
+        }
+    }
+}
