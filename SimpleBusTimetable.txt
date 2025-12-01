@@ -1,0 +1,13 @@
+public class SimpleBusTimetable {
+    public static void main(String[] args) {
+        String[] routes = {
+            "Route 1: Station A → Station B at 08:00 AM",
+            "Route 2: Station C → Station D at 09:30 AM",
+            "Route 3: Station E → Station F at 11:00 AM"
+        };
+        System.out.println("=== Bus Timetable ===");
+        for (String route : routes) {
+            System.out.println(route);
+        }
+    }
+}
